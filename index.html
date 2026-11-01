@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Auto Planner — a QGIS and Python project for GIS-based delivery area planning, road-network routing and Gangfolge visualization.">
+  <title>Auto Planner | GIS & Python Project</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top"><span class="mark">A<span>↗</span></span><span>Auto Planner <small>GIS / Python</small></span></a>
+    <nav aria-label="Main navigation"><a href="#overview">Overview</a><a href="#showcase">Showcase</a><a href="#demo">Route demo</a><a href="#technical">Technical</a></nav>
+  </header>
+  <main id="top">
+    <section class="hero wrap" id="overview">
+      <div class="eyebrow"><span class="signal"></span> SELECTED PROJECT / QGIS PLUGIN</div>
+      <h1>From address data to<br><em>optimized delivery routes.</em></h1>
+      <p class="lead">Auto Planner is a Python-based QGIS plugin for planning delivery territories, clustering districts and generating road-network-aware delivery sequences.</p>
+      <div class="hero-actions"><a class="primary" href="#showcase">Explore the project <span aria-hidden="true">↗</span></a><a class="secondary" href="#demo">Watch route demo <span aria-hidden="true">↗</span></a></div>
+      <div class="tags"><span>QGIS</span><span>Python</span><span>Geospatial analysis</span><span>Network routing</span><span>Automation</span></div>
+    </section>
+    <section class="section wrap" id="showcase">
+      <div class="section-head"><span class="kicker">01 / PROJECT SHOWCASE</span><h2>Selected screens & results</h2><p>Three views of the plugin workflow, from the planning interface to final route outputs.</p></div>
+      <article class="feature">
+        <div class="feature-copy"><span class="number">01</span><div><h3>Routing interface</h3><p>Delivery products, vehicle types, depots and route modes can be configured directly within QGIS.</p><span class="micro">STEP 4 · ROUTE OPTIMIZATION</span></div></div>
+        <button class="media-button" type="button" data-image="assets/step4-interface.png" data-alt="QGIS Step 4 route optimizer interface" aria-label="Expand routing interface screenshot"><img src="assets/step4-interface.png" alt="Auto Planner Step 4 interface with products, routing modes, vehicles and queue builder" loading="lazy"><span class="expand">View full image ↗</span></button>
+      </article>
+      <article class="feature">
+        <div class="feature-copy"><span class="number">02</span><div><h3>Road-network route</h3><p>Ordered delivery stops are connected through a directed road network, with road restrictions and one-way travel represented in the route.</p><span class="micro">STEP 4 · ROUTING RESULT</span></div></div>
+        <button class="media-button" type="button" data-image="assets/step4-result.png" data-alt="Optimized delivery route with stops along road network" aria-label="Expand routing result screenshot"><img src="assets/step4-result.png" alt="Blue calculated route through delivery stop points in QGIS" loading="lazy"><span class="expand">View full image ↗</span></button>
+      </article>
+      <article class="feature">
+        <div class="feature-copy"><span class="number">03</span><div><h3>Planning territories</h3><p>Delivery addresses are organized into spatial districts and shown as colored polygons with their corresponding building points.</p><span class="micro">STEP 1 / PLANNING MAP</span></div></div>
+        <button class="media-button" type="button" data-image="assets/step1-result.png" data-alt="District polygons and delivery points on the planning map" aria-label="Expand planning map screenshot"><img src="assets/step1-result.png" alt="Color-coded delivery district polygons and points on a QGIS map" loading="lazy"><span class="expand">View full image ↗</span></button>
+      </article>
+    </section>
+    <section class="section section-alt" id="demo"><div class="wrap"><div class="section-head"><span class="kicker">02 / ROUTE VISUALIZATION</span><h2>Gangfolge in motion</h2><p>A short view of the delivery sequence progressing along the road network.</p></div><div class="video-frame"><video controls playsinline preload="metadata" aria-label="Gangfolge route animation" poster="assets/step4-result.png"><source src="assets/gangfolge-demo.mp4" type="video/mp4">Your browser cannot play this video.</video></div><p class="video-note">Route sequence demo · Video controls available for playback and fullscreen.</p></div></section>
+    <section class="section wrap" id="technical"><div class="section-head"><span class="kicker">03 / THE SYSTEM</span><h2>Behind the project</h2><p>Other capabilities in brief.</p></div><div class="text-grid"><div><h3>Data preparation</h3><p>CSV/GeoPackage integration, data filtering, coordinate updates and address-to-road snapping.</p></div><div><h3>Territory creation</h3><p>Voronoi-based planning, road-connected clustering and district balancing.</p></div><div><h3>Network modeling</h3><p>Vehicle-specific graphs, directional restrictions, barriers and configurable road access.</p></div><div><h3>Route optimization</h3><p>Network-distance ordering with nearest-neighbor and local optimization, plus route exports.</p></div></div><p class="stack"><strong>Built with</strong> Python · PyQGIS · GeoPandas · Shapely · SciPy · Pandas · road-graph algorithms</p></section>
+  </main>
+  <footer class="wrap"><strong>Auto Planner</strong><span>© 2026 Georgin Joseph. All rights reserved.</span><a href="#top">Back to top ↑</a></footer>
+  <dialog id="lightbox" aria-label="Expanded screenshot"><form method="dialog"><button class="close" type="submit" aria-label="Close enlarged image">×</button></form><img id="lightbox-image" src="" alt=""></dialog>
+</body>
+</html>
